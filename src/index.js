@@ -6,9 +6,7 @@ import YTSearch from "youtube-api-search";
 import SearchBar from "./components/search_bar";
 import VideoList from "./components/video_list";
 import VideoDetail from "./components/video_detail";
-//import API_KEY from "../config/config";
-
-let API_KEY = process.env.API_KEY;
+import API_KEY from "../config/config";
 
 // create a component
 
