@@ -1,18 +1,20 @@
 {
   "name": "ragtube",
   "version": "1.0.0",
-  "description": "learning by doing",
+  "description": "youtube.api fetch and server",
   "main": "index.js",
   "repository": "",
   "scripts": {
-    "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
+    "dev": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
+    "start": "node server.js",
+    "postinstall": "webpack -p",
     "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive ./test",
     "test:watch": "npm run test -- --watch"
   },
   "engines": {
     "node": "8.2.1"
   },
-  "author": "",
+  "author": "devcs",
   "license": "ISC",
   "devDependencies": {
     "babel-core": "^6.2.1",

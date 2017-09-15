@@ -6,9 +6,9 @@ import YTSearch from "youtube-api-search";
 import SearchBar from "./components/search_bar";
 import VideoList from "./components/video_list";
 import VideoDetail from "./components/video_detail";
-// import API_KEY from "../config/config";
+import API_KEY from "../config/config";
 
-let API_KEY = process.env.API_KEY;
+let apiKey = API_KEY || process.env.API_KEY;
 
 // create a component
 
@@ -22,7 +22,7 @@ class App extends Component {
     this.videoSearch("dogs");
   };
   videoSearch(term) {
-    YTSearch({key: API_KEY, term}, videos => {
+    YTSearch({key: apiKey, term}, videos => {
       this.setState({
         videos,
         selectedVideo: videos[0]
