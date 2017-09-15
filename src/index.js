@@ -8,8 +8,6 @@ import VideoList from "./components/video_list";
 import VideoDetail from "./components/video_detail";
 //import API_KEY from "../config/config";
 
-let apiKey = process.env.API_KEY;
-
 // create a component
 
 class App extends Component {
@@ -22,7 +20,7 @@ class App extends Component {
     this.videoSearch("dogs");
   };
   videoSearch(term) {
-    YTSearch({key: apiKey, term}, videos => {
+    YTSearch({key: process.env.API_KEY, term}, videos => {
       this.setState({
         videos,
         selectedVideo: videos[0]
