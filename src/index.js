@@ -8,7 +8,7 @@ import VideoList from "./components/video_list";
 import VideoDetail from "./components/video_detail";
 //import API_KEY from "../config/config";
 
-let API_KEY = process.env.API_KEY.toString();
+let API_KEY = process.env.API_KEY;
 
 // create a component
 
