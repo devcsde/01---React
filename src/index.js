@@ -1,4 +1,3 @@
-require('dotenv').config();
 import _ from "lodash";
 import React, {Component} from "react";
 import ReactDOM from "react-dom";
@@ -8,7 +7,7 @@ import SearchBar from "./components/search_bar";
 import VideoList from "./components/video_list";
 import VideoDetail from "./components/video_detail";
 
-let API_KEY = process.env.API_KEY || process.env.KEY;
+let API_KEY = process.env.KEY;
 
 // create a component
 
